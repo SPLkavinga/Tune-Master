@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MUSIC CELEBRITIES</title>
+      <link rel="stylesheet" href="../css/navbar.css">
+      <link rel="stylesheet" href="../css/footer.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+      <style>
+         body{
+         background-color: #282727;
+         }
+
+         .BODYMARGIN{
+         margin-top   : 50px;
+         text-align   : center;
+         color        : #BCFD4C ;
+         font-size    : 30px;
+         }
+
+         #BODYMARGINwhite{
+         color: white;
+         }
+         /* /////////////////////////////////////////////modal image CSS///////////////////////////////// */
+         /* Style the gallery images */
+         .gallerymodal {
+         display          : flex;
+         flex-wrap        : wrap;
+         justify-content  : center;
+         margin-top       : 7%;
+         margin-bottom    : 10%;
+         }
+
+         .gallerymodal img {
+         width        : 200px;
+         height       : 250px;
+         margin       : 6px;
+         border-radius: 5px;
+         cursor       : pointer;
+         transition   : opacity 0.3s;
+         }
+
+         .gallerymodal img:hover {
+         background: greenyellow; 
+         box-shadow: 0 0 10px greenyellow; 
+         }
+
+         /* Style the modal */
+         .modal {
+         display          : none; /* Hidden by default */
+         position         : fixed; /* Stay in place */
+         z-index          : 1; /* Sit on top */
+         padding-top      : 100px; /* Location of the box */
+         left             : 0;
+         top              : 0;
+         width            : 100%; /* Full width */
+         height           : 100%; /* Full height */
+         overflow         : auto; /* Enable scroll if needed */
+         background-color : rgb(0,0,0); /* Fallback color */
+         background-color : rgba(0,0,0,0.9);} /* Black w/ opacity */
+
+         .modal-content {
+         margin     : auto;
+         display    : block;
+         width      : 60%;
+         }
+
+         .modal img {
+         display    : block;
+         margin     : auto;
+         width      : auto;
+         height     : 500px;
+         margin-top : 10%;
+         }
+
+         .close {
+         position     : absolute;
+         top          : 20px;
+         right        : 30px;
+         font-size    : 30px;
+         font-weight  : bold;
+         color        : #BCFD4C;
+         cursor       : pointer;
+         }
+
+         .close:hover {
+         color: white;
+         }
+
+         /* Caption of Modal Image */
+         #caption {
+         margin     : auto;
+         display    : block;
+         width      : 80%;
+         max-width  : 700px;
+         text-align : center;
+         color      : #ccc;
+         padding    : 10px 0;
+         height     : 150px;
+         }
+
+         /* Add Animation */
+         .modal-content, #caption {  
+         -webkit-animation-name     : zoom;
+         -webkit-animation-duration : 0.6s;
+         animation-name             : zoom;
+         animation-duration         : 0.6s;
+         }
+
+         @-webkit-keyframes zoom {
+         from {-webkit-transform:scale(0)} 
+         to {-webkit-transform:scale(1)}
+         }
+
+         @keyframes zoom {
+         from {transform:scale(0)} 
+         to {transform:scale(1)}
+         }
+
+         /* /////////////////////////////////////////////flexbox css///////////////////////////////// */
+         .flex-containerMargin{
+         margin-left  : auto;
+         margin-right : auto;
+         }
+
+         .flex-container01 {
+         display        : flex;
+         justify-content: center;
+         }
+
+         .flex-container01 > div {
+         width            : 1000px;
+         height           : 500px;
+         margin           : 10px;
+         padding          : 20px;
+         font-size        : 25px;
+         color            : white;
+         background-color :#333;
+         }
+
+         div .flex-container02{
+         width            :  400px;
+         height           : 500px;
+         background-color :#333;
+         }
+
+         .FLEXHEADER{
+         color: #BCFD4C;
+         }
+
+         .flex-container01 {  
+         -webkit-animation-name : A;
+         animation-name         : A;
+         }
+
+         .flexspan{
+         color: #BCFD4C;
+         }
+
+      </style>
+   </head>
+   <body>
+      <nav>
+         <a href="../htmlpages/AboutUs.html">About Us</a>
+            <a href="../htmlpages/Sitemap.html">Sitemap</a>
+            <a href="../htmlpages/form.html">Form</a>
+            <a href="../htmlpages/quiz.html">Quiz</a>
+            <a href="../htmlpages/gallery.html">Images</a>
+            <a href="../htmlpages/Shopping.html">Shop</a>
+            <a href="../htmlpages/presentation.html">Home</a>
+         <div>
+            <a href="../htmlpages/contactUS.html"><img src="../webPictures/PICTURES/DILSHANPICTURES/logo.PNG" alt="Logo"></a>
+         </div>
+      </nav>
+      <div class="BODYMARGIN">
+         <h1>MUSIC CELEBRITIES</h1>
+         <p id="BODYMARGINwhite">The Greatest Musicians of All Time</p>
+      </div>
+      <!-- ///////////////////////////////////////gallery-modal/////////////////////////////////////////////////////////////////////////////// -->
+      <!-- Gallery -->
+      <div class="gallerymodal">
+         <img src="../webPictures/PICTURES/Artisits/elvispresly.jpeg"     alt="ELVIS-PRESLY"        onclick="openModal(this, this.alt)" >
+         <img src="../webPictures/PICTURES/Artisits/bobmarley.jpeg"       alt="BOB MARLEY"          onclick="openModal(this, this.alt)" >
+         <img src="../webPictures/PICTURES/Artisits/elton-john-.jpeg"     alt="ELTON JHON"          onclick="openModal(this, this.alt)" >
+         <img src="../webPictures/PICTURES/Artisits/michealjackson.jpeg"  alt="MJ-MICHEAL JACKSON"  onclick="openModal(this, this.alt)" >
+         <img src="../webPictures/PICTURES/Artisits/nirvana.jpeg"         alt="NIRVANA BAND"        onclick="openModal(this, this.alt)" >
+         <img src="../webPictures/PICTURES/Artisits/tina-turner.jpeg"     alt="TINA TURNER"         onclick="openModal(this, this.alt)" >
+         <img src="../webPictures/PICTURES/Artisits/Guns-N-Roses.jpeg"    alt="GUNS-N-ROSES"        onclick="openModal(this, this.alt)" >
+         <img src="../webPictures/PICTURES/Artisits/DUA-lIPA.jpeg"        alt="DUA-LIPA"            onclick="openModal(this, this.alt)" >
+         <img src="../webPictures/PICTURES/Artisits/ANNE-MARIE.jpeg"      alt="ANNE-MARIE"          onclick="openModal(this, this.alt)" >
+         <img src="../webPictures/PICTURES/Artisits/madona.jpeg"          alt="MADONA"              onclick="openModal(this, this.alt)" >
+         <img src="../webPictures/PICTURES/Artisits/backstreet-boys.jpeg" alt="BACKSTREET-BOYS"     onclick="openModal(this, this.alt)" >
+         <img src="../webPictures/PICTURES/Artisits/Jerry-Lee-Lewis.jpeg" alt="JERRY-LEWIS"         onclick="openModal(this, this.alt)" >
+         <!-- Modal -->
+         <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+               <img src="#" id="modalImg" alt="Placeholder image">
+               <!-- <img id="modalImg" /> -->
+               <div id="caption"></div>
+            </div>
+         </div>
+      </div>
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <section  class="flex-containerMargin">
+         <div    class="flex-container01">
+            <div>
+               <h2 class="FLEXHEADER">ELVIS-PRESLY</h2>
+               <br>
+               <p>Elvis Presley was the<span class="flexspan"> king of rock 'n' roll music</span> , and he greatly improved it. He combined many musical genres to produce the most well-known rock 'n' roll sound we know today: rockabilly. Elvis Presley went from being an unknown to a household name because to this music genre's enormous popularity.Presley was unique because of his songs and charisma on stage.</p>
+               <br>
+               <p>You may already be in love with Presley's dance moves if you've seen him perform live. His songs often blend Black gospel, blues, and country genres and are heavily influenced by the Black musicians he listened to growing up.Also, he had 18 #1 singles in the US. More than a billion Elvis Presley records have been sold worldwide as of this writing.</p>
+               <br>
+            </div>
+            <div class="flex-container02"><img src="../webPictures/PICTURES/Artisits/elvispresly.jpeg" alt="Elvis Presley" width="370" height="450"></div>
+         </div>
+         <div    class="flex-container01">
+            <div  class="flex-container02"><img src="../webPictures/PICTURES/Artisits/bobmarley.jpeg" alt="Bob Marley" width="370" height="450"></div>
+            <div>
+               <h2 class="FLEXHEADER">BOB MARLEY</h2>
+               <br>
+               <p>Last but not least on our list is Bob Marley, who resonated with the masses by providing them with what they wanted to hear.<br>
+                  He often used his musical influence to shed light on the sufferings of the world. Some of such songs are “So Much Trouble in the World” and “Burnin" and "Lootin.”
+               </p>
+               <br>
+               <p>He also globalized reggae, which grew out of the ska and rocksteady genres. He was inducted into the Rock and Roll Hall of Fame in 1994, making him the first artist to emerge from a third-world country.</p>
+               <br>
+            </div>
+         </div>
+         <div class="flex-container01">
+            <div>
+               <h2 class="FLEXHEADER">ELTON JHON</h2>
+               <br>
+               <p>Elton John is another great to join the list. Elton John was born in 1947 and has been a staple of the music industry for decades. He has brought the world amazing music and songs that are still popular to this day.With so many years of music under his belt, Elton John is one of the wealthiest musicians in the world while also one of the most memorable in history.His musical repertoire comprises many studio albums, several live albums, and numerous compilations. Elton's collaboration with songwriter Bernie Taupin has produced several hit songs including Tiny Dancer, Rocket Man, Candle in the Wind, Bennie and the Jets, and Goodbye Yellow Brick Road.<br><br>Elton John isn't just a musician though. He is also an excellent charitable giver and works with several charities. A great musician to be remembered for sure!</p>
+            </div>
+            <div class="flex-container02"><img src="../webPictures/PICTURES/Artisits/elton-john-.jpeg" alt="elton-john" width="370" height="450"></div>
+         </div>
+         <div class="flex-container01">
+            <div class="flex-container02"><img src="../webPictures/PICTURES/Artisits/michealjackson.jpeg" alt="micheal-jackson" width="370" height="450"></div>
+            <div>
+               <h2 class="FLEXHEADER">MJ-MICHEAL JACKSON</h2>
+               <br>
+               <p>The late Micheal Jackson, also known as the King of Pop, had the largest impact on American popular music in the 20th century. His creativity led him to revolutionize the way music is produced and promoted.<br>Despite the fact he is called the <span class="flexspan">“King of Pop,”</span> we believe that Michael Jackson cannot be tied to a single music genre. He was a musical genius who experimented with every genre—from pop to rock, soul, funk, gospel, hip-hop, and even rap. Because of this, people from different backgrounds, cultures, races, and ages love and admire him to the core.<br><br> Michael Jackson won countless awards, including 13 Grammys. In addition, he was the first celebrity to have two stars on the Hollywood Walk of Fame for the same category.</p>
+            </div>
+         </div>
+         <div class="flex-container01">
+            <div>
+               <h2 class="FLEXHEADER">NIRVANA BAND</h2>
+               <br>
+               <p>Nirvana was formed in 1987 in Washington, USA, and disbanded in 1994 after the tragic death of their frontman Kurt Cobain. It was undoubtedly Kurt Cobain who made the band what they were, but this would never have been possible without Dave Grohl and Krist Novoselic also.<br>The band played a huge role in the development of grunge music and became one of the most famous rock bands at that time, with critics naming them <span class="flexspan">“The Beatles of the 90s”</span> . Nirvana is considered to be one of the best-selling bands of all time and was ranked by Rolling Stone Magazine as the number-one grunge band of all time.<br>I think almost anyone knows who Nirvana is and that's largely the reason why they made this list. An influential and memorable band that will go down in history as one of the most popular ones.</p>
+               <br>
+            </div>
+            <div class="flex-container02"><img src="../webPictures/PICTURES/Artisits/nirvana.jpeg" alt="Nirvana" width="370" height="450"></div>
+         </div>
+         <div class="flex-container01">
+            <div class="flex-container02"><img src="../webPictures/PICTURES/Artisits/Guns-N-Roses.jpeg" alt="GUNS-N-ROSES" width="370" height="450"></div>
+            <div>
+               <h2 class="FLEXHEADER">GUNS N'ROSES</h2>
+               <br>
+               <p>Guns N' Roses is another legendary band that joins the ranks. The band was formed in 1985, and since then has released six studio albums.The band has many notable achievements that are complemented by their amazing and memorable music that is still active to this day, and so is the band. As far as musical accomplishments, the band has won many awards and held many tours.The most notable of all is the band's best album, <span class="flexspan">“Appetite for Destruction”</span>, which sold over 30 million copies worldwide. Another impressive feat was that during their Appetite for Destruction Tour, they broke Pink Floyd's record for being the highest-grossing tour of the 1990s, which is still standing today.<br>Guns N' Roses is one of the most influential bands in music history. They were listed on VH1's “100 Greatest Artists of Hard Rock” and ranked at 12th place on VH1's “100 Greatest Artists of All Time”.</p>
+               <br>
+            </div>
+         </div>
+         <div class="flex-container01">
+            <div>
+               <h2 class="FLEXHEADER">DUA-LIPA</h2>
+               <br>
+               <p>Dua Lipa is an English singer, songwriter, and model. Her musical career began at age 14, when she began covering songs by other artists on YouTube. In 2015, she was signed with Warner Music Group and released her first single soon after.<br><br>Becoming one of the biggest pop stars in the world<br><br>In 2015, Lipa signed to Warner Music Group and, by August that year, she had released her first single, New Love. However, it was her second single Be the One, released two months, later that catapulted her into stardom.
+               </p>
+               <br>
+            </div>
+            <div class="flex-container02"><img src="../webPictures/PICTURES/Artisits/DUA-lIPA.jpeg" alt="DUA-LIPA" width="370" height="450"></div>
+         </div>
+         <div class="flex-container01">
+            <div class="flex-container02"><img src="../webPictures/PICTURES/Artisits/ANNE-MARIE.jpeg" alt="ANNE-MARIE" width="370" height="450"></div>
+            <div>
+               <h2 class="FLEXHEADER">ANNE MARIE</h2>
+               <br>
+               <p>Annemarie is the protagonist, or main character in the novel, and can be seen as the heroine. She is a tall, blonde, ten-year-old Christian girl living in Copenhagen, Denmark during World War II.<br><br>Annemarie is a dynamic character. <br>She changes during the course of the novel due to her experiences and actions..</p>
+               <br>
+            </div>
+         </div>
+         <div class="flex-container01">
+            <div>
+               <h2 class="FLEXHEADER">MADONA</h2>
+               <br>
+               <p>Madonna, original name Madonna Louise Veronica Ciccone, (born August 16, 1958, Bay City, Michigan, U.S.), American singer, songwriter, actress, and entrepreneur whose immense popularity in the 1980s and '90s allowed her to achieve levels of power and control that were nearly unprecedented for a woman in the entertainment industry.<br><br>Her first hit, <span class="flexspan">“Holiday,”</span> in 1983, provided the blueprint for her later material—an upbeat dance club sound with sharp production and an immediate appeal. Madonna's melodic pop incorporated catchy choruses, and her lyrics concerned love, sex, and relationships—ranging from the breezy innocence of “True Blue” (1986) to the erotic fantasies of “Justify My Love” (1990) to the spirituality of later songs such as “Ray of Light” (1998). Criticized by some as being limited in range, her sweet girlish voice nonetheless was well suited to pop music.</p>
+               <br>
+            </div>
+            <div class="flex-container02"><img src="../webPictures/PICTURES/Artisits/madona.jpeg" alt="MADONA" width="370" height="450"></div>
+         </div>
+         <div class="flex-container01">
+            <div class="flex-container02"><img src="../webPictures/PICTURES/Artisits/backstreet-boys.jpeg"  alt="backstreet-boys" width="370" height="450"></div>
+            <div>
+               <h2 class="FLEXHEADER">BACKSTREET BOYS</h2>
+               <br>
+               <p>Backstreet Boys, also known as BSB, is an American pop supergroup that became popular during the 1990s and 2000s. They are the highest selling boy band of all time with 130 million records sold. The members are AJ McLean, Howie Dorough, Nick Carter, Kevin Richardson and Brian Littrell.<br><br>They became famous in the 90's with their debut international album, Backstreet Boys (1996). They released their second international album, Backstreet's Back (1997), Millennium (1999) and Black & Blue (2000). After a two-year hiatus, they regrouped and released a comeback album Never Gone (2005).</p>
+               <br>
+            </div>
+         </div>
+         <div class="flex-container01">
+            <div>
+               <h2 class="FLEXHEADER">JERRY LEWIS</h2>
+               <br>
+               <p>If you know who Jerry Lee Lewis is then you probably understand why he made the list. Jerry Lee Lewis was an incredibly electrifying individual that revolutionized rock n' roll with his amazing piano skills and trademark performances.<br>Lewis was born in 1935 and first emerged into the public eye as a country music pianist. His first single was released in 1955 and was called <span class="flexspan">“Crazy Arms”</span>. The song made it to number six on the Country charts but Jerry Lee Lewis soon switched over to rock n' roll after meeting with Elvis Presley.<br>Lewis's piano playing style was like no other. Jerry Lee Lewis made sure he would be able to get the best possible sound out of his piano by stuffing cloth inside the piano to make it louder.<br>His trademark performances usually consisted of Jerry Lee Lewis being at the piano, playing it while he was standing up. Most memorable for Great Balls Of Fire, he is already in the history books.</p>
+               <br>
+            </div>
+            <div class="flex-container02"><img src="../webPictures/PICTURES/Artisits/Jerry-Lee-Lewis.jpeg"  alt="JERRY-LEWIS" width="370" height="450"></div>
+         </div>
+      </section>
+      <!-- //javascript -->
+      <script src="../js/gallery.js"></script> 
+      <!-- //javascript -->
+      <br>
+      <footer>
+         <div class="footer">
+            <div class="row">
+               <a id="facebook"  href="https://www.facebook.com/dilshan.zarook?mibextid=LQQJ4d"  ><i class="fa fa-facebook"  ></i></a>
+               <a id="insta"     href="https://instagram.com/edward_evan?igshid=YmMyMTA2M2Y="    ><i class="fa fa-instagram" ></i></a>
+               <a id="youtube"   href="https://wa.me/1773010100"                                 ><i class="fa fa-whatsapp"   ></i></a>
+               <a id="twitter"   href="https://www.linkedin.com/"                                ><i class="fa fa-linkedin"   ></i></a>
+            </div>
+            <div class="row">
+               <ul>
+                  <li><a href="#"             >Back to TOP        </a></li>
+                  <li><a href="../htmlpages/contactUS.html">Contact us         </a></li>
+                  <li><a href="#Privacy"      >Privacy Policy     </a></li>
+                  <li><a href="#Terms"        >Terms & Conditions </a></li>
+                  <li><a href="../htmlpages/student4.html" >Editors page       </a></li>
+               </ul>
+            </div>
+            <div class="row">
+               Tune-Master Copyright © 2023 TuneMaster - All rights reserved || Designed By: MUSIC SCHOOL OF TUNE MASTER. 
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

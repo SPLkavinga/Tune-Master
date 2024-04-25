@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  </head>
+  <body class="gallery-Site-Map">
+    <nav>
+      <a href="../htmlpages/AboutUs.html">About Us</a>
+      <a href="../htmlpages/Sitemap.html">Sitemap</a>
+      <a href="../htmlpages/form.html">Form</a>
+      <a href="../htmlpages/quiz.html">Quiz</a>
+      <a href="../htmlpages/gallery.html">Images</a>
+      <a href="../htmlpages/Shopping.html">Shop</a>
+      <a href="../htmlpages/presentation.html">Home</a>
+      <div>
+        <!-- <a href="Logo.html" ><img src="PICTURES/DILSHANPICTURES/logo.png" alt="Logo"/></a> -->
+        <a href="../htmlpages/contactUS.html"><img src="../webPictures/PICTURES/DILSHANPICTURES/logo.PNG" alt="Logo"></a>
+      </div>
+    </nav>
+    <!-- background color and text color change dropdowns -->
+    <div class="page-edit">
+      <!-- background color change dropdown -->
+      <div class="drp" id="drp-bck-color">
+        <button class="drp-btn">BACKGROUND</button>
+        <div id="bck-drp-content" class="drp-content">
+          <button onclick="changeBackgroundColorIntoDarkMode()">Dark Mode</button>
+          <button onclick="changeBackgroundColorIntoLightMode()">Light Mode</button>
+          <button onclick="changeBackgroundColorIntoBlueLightOffMode()">Spring Mode</button>
+        </div>
+      </div>
+      <!-- text color change dropdown -->
+      <div class="drp" id="drp-txt-color">
+        <button class="drp-btn">FONT SIZE</button>
+        <div id="txt-drp-content" class="drp-content">
+          <button  onclick="increaseFontSize()">+</button>
+          <button  onclick="decreaseFontSize()">-</button>
+          <button  onclick="currentFontSize()">default</button>
+        </div>
+      </div>
+    </div>
+    <!-- gallery of the 9 pictures of lessons -->
+    <section id="TextSize" style ="font-size: 16px">
+      <div class="gallery">
+        <figure id="DrumLesson">
+          <img id="first-child" src="../webPictures/PICTURES/DILSHANPICTURES/drum2.jpeg" alt="Drum Lessons">
+          <figcaption class="MS-Name">Drum<br>lesson</figcaption>
+        </figure>
+        <figure id="GuitarLesson">
+          <img src="../webPictures/PICTURES/DILSHANPICTURES/guitar1.jpeg" alt="Guitar Lessons">
+          <figcaption class="MS-Name">Guitar<br>lesson</figcaption>
+        </figure>
+        <figure id="SingingLessons">
+          <img src="../webPictures/PICTURES/DILSHANPICTURES/singing.jpeg" alt="Singing Lessons">
+          <figcaption class="MS-Name">Singing<br>lesson</figcaption>
+        </figure>
+        <figure id="KeyboardLessons">
+          <img src="../webPictures/PICTURES/DILSHANPICTURES/keyboard.jpeg" alt="Keyboard Lessons">
+          <figcaption class="MS-Name">Keyboard<br>lesson</figcaption>
+        </figure>
+        <figure id="VocalLessons">
+          <img src="../webPictures/PICTURES/DILSHANPICTURES/vocals.jpeg" alt="Voacal Lessons">
+          <figcaption class="MS-Name">Vocals<br>lesson</figcaption>
+        </figure>
+        <figure id="BassGuitarLessons">
+          <img src="../webPictures/PICTURES/DILSHANPICTURES/bassguitar1.6.jpeg" alt="BassGuitar Lessons">
+          <figcaption class="MS-Name">Bass Guitar<br>lesson</figcaption>
+        </figure>
+        <figure id="SongWriting">
+          <img src="../webPictures/PICTURES/DILSHANPICTURES/songwriting.jpeg" alt="SongWriting Lessons">
+          <figcaption class="MS-Name">Songs <br>writing</figcaption>
+        </figure>
+        <figure id="EventsTM">
+          <img src="../webPictures/PICTURES/DILSHANPICTURES/EventsTM.jpeg" alt="Events TUNEMASTER">
+          <figcaption class="MS-Name">Events<br>TuneMaster</figcaption>
+        </figure>
+        <figure id="E-workshop">
+          <img id="last-child" src="../webPictures/PICTURES/DILSHANPICTURES/workshopsTm.jpeg" alt="E-workshop">
+          <figcaption class="MS-Name"><br>Events+Workshops</figcaption>
+        </figure>
+      </div>
+      <!-- DRUM LESSONS modal -->
+      <div id="MSDRUM" class="MSLESSONS">
+        <div class="MS">
+          <h1 class="MS-HEADER">DRUM LESSONS</h1>
+          <p class="TUNEMASTER-MS">
+            LESSONS IN DRUMMING FOR NEWBIES
+            Beginners who want to skip the basic pad training can take drum lessons from School of Rock that are straightforward but effective. In their first lesson, students start practicing behind a drum set to learn how to play the instrument. Students will master the fundamentals of drum fills and solos through private drum lessons, groMSEVENTS practice sessions, and live performances. In comparison to any other music program in the globe, School of Rock has been teaching drum classes to children and adults for many years. We have helped more drummers get their start in the industry. Our fundamental belief is that the School of Rock Method and performance-based music education are the greatest ways for students to develop their musical proficiency. All of our programs, even the drum lessons for beginners
+          </p>
+          <div class="MS-GALLERY">
+            <img  src="../webPictures/PICTURES/DILSHANPICTURES/drum1.1.jpeg" alt="MSDRUM1">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/drum1.2.jpeg" alt="MSDRUM2">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/drum1.3.jpeg" alt="MSDRUM3">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/drum2.jpeg"   alt="MSDRUM4">
+          </div>
+        </div>
+      </div>
+      <!--  GUITAR LESSONS modal -->
+      <div id="MSGUITAR" class="MSLESSONS">
+        <div class="MS">
+          <h1 class="MS-HEADER">GUITAR LESSONS</h1>
+          <p class="TUNEMASTER-MS">
+            GUITAR PRACTICE FOR NEWCOMERS Our highly qualified professional instructors teach beginner guitar students using the trademarked School of Rock Method, starting with the foundations including scales, chords, tuning, arpeggios, and rhythm. They then employ well-known rock songs to help guitar students navigate the formative years of musical development. With weekly private guitar lessons and groMSEVENTS practice sessions, our basic guitar lessons encourage creativity and help turn new students into elite performers. The fundamental tenet of School of Rock is that performance-based music education is the most effective way for students to develop their musical proficiency. Every one of our guitar classes for beginners has a performance component.  
+          </p>
+          <div class="MS-GALLERY">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/guitar1.1.jpeg"   alt="MSGUITAR1">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/guitar1.3.jpeg"   alt="MSGUITAR2">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/guitar1.jpeg"     alt="MSGUITAR3">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/guitar1.2.jpeg"   alt="MSGUITAR4">
+          </div>
+        </div>
+      </div>
+      <!-- SINGING LESSONS modal -->
+      <div id="MSSINGING" class="MSLESSONS">
+        <div class="MS">
+          <h1 class="MS-HEADER">SINGING LESSONS</h1>
+          <p class="TUNEMASTER-MS">
+            Young singers and aspiring vocalists travel to the Music School of Tune-Master to master the foundations of singing, such as breathing, posture, and diction. Strong voice performances are based on these fundamental ideas. Our experienced voice teachers support beginning singers as they proceed through the early phases of vocal development by helping with pitch training, timbre development, and maintaining a steady tempo. When students enrol in our programs, they may anticipate both weekly private singing lessons and group rehearsals, which is unlike other singing lessons. Using our patented Method App, Method Book collection, SongFirst methodology, and performance-based music curriculum, the School of Rock Method develops musical proficiency. Our lesson plans all have a performance component.
+          </p>
+          <div class="MS-GALLERY">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/singing1.0.jpeg" alt="MSSINGING1">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/singing1.1.jpeg" alt="MSSINGING2">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/singing1.2.jpeg" alt="MSSINGING3">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/singing1.3.jpeg" alt="MSSINGING4">
+          </div>
+        </div>
+      </div>
+      <!-- KEYBOARD LESSONS modal -->
+      <div id="MSKEYBOARD" class="MSLESSONS">
+        <div class="MS">
+          <h1 class="MS-HEADER">KEYBOARD LESSONS</h1>
+          <p class="TUNEMASTER-MS">
+            Keyboard classes at the Music Academy of Tune-Master are very dissimilar from the typical one-on-one starting piano sessions that most pupils come to detest. Our keyboard instructors at School of Tune-Master teach students to play well-known rock songs while including fundamental ideas and techniques like finger placement, scales, pedaling, key discrimination, and rhythm. This helps students fall in love with the keyboard (and piano). To get our piano students ready for a public performance with a full band, we begin with private keyboard instruction combined with band practices. Using our patented Method App, Method Book collection, SongFirst methodology, and performance-based music curriculum, the School of Rock Method develops musical proficiency. Every one of our lesson plans has a performance component.
+          </p>
+          <div class="MS-GALLERY">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/keyboard.13.jpeg" alt="MSKEYBOARD1">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/keyboard1.0.jpeg" alt="MSKEYBOARD2">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/keyboard1.1.jpeg" alt="MSKEYBOARD3">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/keyboard1.2.jpeg" alt="MSKEYBOARD4">
+          </div>
+        </div>
+      </div>
+      <!-- VOCALS LESSONS modal -->
+      <div id="MSVOCALS" class="MSLESSONS">
+        <div class="MS">
+          <h1 class="MS-HEADER">VOCALS LESSONS</h1>
+          <p class="TUNEMASTER-MS">
+            A vocal microphone's job is to accurately mimic the sound of a voice so that it can be boosted and broadcast at volumes that blend in with the other instruments. Some singers, like Lady Gaga, Beyoncé, Ariana Grande, and Justin Bieber, have voices that are large enough naturally for them to perform without a microphone and still sound fantastic. If you're not one of them, then properly using a mic will ensure that you sound good, help you preserve your voice, and give you the chance to improve your voice with reverb, delay, autotune, or other effects.
+          </p>
+          <div class="MS-GALLERY">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/vocals.1.0.jpeg" alt="MSVOCALS1">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/vocals.1.1.jpeg" alt="MSVOCALS2">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/vocals.1.2.jpeg" alt="MSVOCALS3">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/vocals.1.4.webp" alt="MSVOCALS4">
+          </div>
+        </div>
+      </div>
+      <!-- BASSGUITAR LESSONS modal -->
+      <div id="MSBASSGUITAR" class="MSLESSONS">
+        <div class="MS">
+          <h1 class="MS-HEADER">BASSGUITAR LESSONS</h1>
+          <p class="TUNEMASTER-MS">
+            The first step in learning how to play the bass like a pro is to use the beginner programs in the Tune-Master music school. A thorough foundation of the bass instrument, including fundamental chords, finger placement, arpeggios, tuning, slap and pop technique, and octave forms, is provided to every student taking starting bass classes. Every student takes part in group rehearsals and receives private bass lessons as they prepare for a live performance with a complete band. More students have learned to play the bass through this combination of private teaching and live performance than through any other music program in history. The performance-based curriculum, Method App, Method Book collection, SongFirst methodology, and copyrighted school of Tune-Master Method help students become proficient musicians. A performance component is a part of every lesson we teach.              
+          </p>
+          <div class="MS-GALLERY">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/bassguitar1.6.jpeg"   alt="MSBASSGUITAR1">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/guitar1.jpeg"         alt="MSBASSGUITAR2">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/guitar1.3.jpeg"       alt="MSBASSGUITAR3">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/guitar1.2.jpeg"       alt="MSBASSGUITAR4">
+          </div>
+        </div>
+      </div>
+      <!-- SONGWRITING LESSONS modal -->
+      <div id="MSSONGWRITING" class="MSLESSONS">
+        <div class="MS">
+          <h1 class="MS-HEADER">SONGWRITING LESSONS</h1>
+          <p class="TUNEMASTER-MS">
+            One of the most exciting and gratifying activities for musicians is writing original tunes. The School of TUNE MASTER Songwriting Program guides students in the creation of original works by instructing them in the principles of songwriting, arrangement, and music theory. Students receive one weekly private lesson where they learn theory, technique, and ideas on the instrument of their choice. Then, in weekly group courses, these concepts are put into practice as the students collaborate on poetic workshops and songwriting exercises. Students from the Songwriting Program perform on stage or join bands to record their original songs every few months. presently accessible online.
+          </p>
+          <div class="MS-GALLERY">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/songwriting1.0.jpeg" alt="MSSONGWRITING1">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/songwriting1.1.png"  alt="MSSONGWRITING2">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/songwriting1.2.jpeg" alt="MSSONGWRITING3">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/songwriting1.3.jpeg" alt="MSSONGWRITING4">
+          </div>
+        </div>
+      </div>
+      <!-- EVENTS TUNEMASTER modal -->
+      <div id="MSEVENTS" class="MSLESSONS">
+        <div class="MS">
+          <h1 class="MS-HEADER">EVENTS TUNEMASTER</h1>
+          <p class="TUNEMASTER-MS">
+            A well-known musical ensemble, School of Tune-Master, has become well-known all over the world for its enthralling performances. The group has been able to play in thousands of performances all around the world every year thanks to their amazing talent and commitment. Their performances are a masterful fusion of music, dancing, and entertainment that captivates the audience. The School of Tune-Master is a well-liked option for event planners since they consistently offer excellent performances at everything from intimate private gatherings to huge concerts. They cater to a wide spectrum of musical preferences with their diverse repertoire, making sure that there is something for everyone in their performances. They have become one of the most sought-after musical ensembles in the world thanks to their dedication to quality and love of music. 
+          </p>
+          <div class="MS-GALLERY">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/EventsTM.1.0.jpeg" alt="MSEVENTS1">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/EventsTM.1.1.jpeg" alt="MSEVENTS2">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/EventsTM.1.2.jpeg" alt="MSEVENTS3">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/EventsTM.1.3.jpeg" alt="MSEVENTS4">
+          </div>
+        </div>
+      </div>
+      <!-- EVENTS + WORKSHOPS modal -->
+      <div id="MSWORKSHOPS" class="MSLESSONS">
+        <div class="MS">
+          <h1 class="MS-HEADER">EVENTS + WORKSHOPS</h1>
+          <p class="TUNEMASTER-MS">
+            The School of Tune Master offers a variety of events and workshops for individuals looking to enhance their knowledge and skills in music. These events range from workshops focused on specific instruments or techniques, to masterclasses led by renowned musicians. They also host concerts featuring their talented performers, showcasing the diversity and depth of their repertoire. Additionally, the School of Tune Master offers educational programs and partnerships with schools and community organizations, providing opportunities for young musicians to learn from experienced professionals. These events and workshops are designed to inspire and educate individuals of all ages and levels of experience, promoting a love for music and the arts.
+          </p>
+          <div class="MS-GALLERY">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/workshopsTm.1.0.jpeg" alt="MSWORKSHOPS1">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/workshopsTm.1.2.jpeg" alt="MSWORKSHOPS2">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/workshopsTm1.1.3.jpeg" alt="MSWORKSHOPS3">
+            <img src="../webPictures/PICTURES/DILSHANPICTURES/workshopsTm1.4.jpeg" alt="MSWORKSHOPS4">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ///////////////////////////////////////gallery-modal/////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Gallery -->
+    <div class="gallerymodal">
+      <img src="../webPictures/PICTURES/DILSHANPICTURES/drum1.3.jpeg"        alt="Drumming"      onclick="openModal(this, this.alt)" >
+      <img src="../webPictures/PICTURES/DILSHANPICTURES/singing1.2.jpeg"     alt="Singing"       onclick="openModal(this, this.alt)" >
+      <img src="../webPictures/PICTURES/DILSHANPICTURES/keyboard1.1.jpeg"    alt="keyboard"      onclick="openModal(this, this.alt)" >
+      <img src="../webPictures/PICTURES/DILSHANPICTURES/bassguitar1.6.jpeg"  alt="Bass-guitar"   onclick="openModal(this, this.alt)" >
+      <img src="../webPictures/PICTURES/DILSHANPICTURES/songwriting1.1.png"  alt="Song writing"  onclick="openModal(this, this.alt)" >
+      <img src="../webPictures/PICTURES/DILSHANPICTURES/EventsTM.1.2.jpeg"   alt="Past-Student"  onclick="openModal(this, this.alt)" >
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <!-- <img src="#" id="modalImg"> -->
+          <img src="#" id="modalImg" alt="Placeholder image">
+          <div id="caption"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <script src="../js/gallery.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/e1ddd89851.js" crossorigin="anonymous"></script>  -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a id="facebook"  href="https://www.facebook.com/dilshan.zarook?mibextid=LQQJ4d"  ><i class="fa fa-facebook"  ></i></a>
+               <a id="insta"     href="https://instagram.com/edward_evan?igshid=YmMyMTA2M2Y="    ><i class="fa fa-instagram" ></i></a>
+               <a id="youtube"   href="https://wa.me/1773010100"                                 ><i class="fa fa-whatsapp"   ></i></a>
+               <a id="twitter"   href="https://www.linkedin.com/"                                ><i class="fa fa-linkedin"   ></i></a>
+          
+        </div>
+        <div class="row">
+          <ul>
+            <li><a href="#"             >Back to TOP        </a></li>
+            <li><a href="../htmlpages/contactUS.html">Contact us         </a></li>
+            <li><a href="#Privacy"      >Privacy Policy     </a></li>
+            <li><a href="#Terms"        >Terms & Conditions </a></li>
+            <li><a href="../htmlpages/student4.html" >Editors page       </a></li>
+          </ul>
+        </div>
+        <div class="row">
+          Tune-Master Copyright © 2023 TuneMaster - All rights reserved || Designed By: MUSIC SCHOOL OF TUNE MASTER. 
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

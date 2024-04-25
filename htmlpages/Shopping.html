@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/Shopping.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+
+
+</head>
+<body>
+    <script src="../js/Cart_js.js"></script>
+    <!--nav bar of the page--> 
+    <nav id="nav">
+      <a href="../htmlpages/AboutUs.html">About Us</a>
+      <a href="../htmlpages/Sitemap.html">Sitemap</a>
+      <a href="../htmlpages/form.html">Form</a>
+      <a href="../htmlpages/quiz.html">Quiz</a>
+      <a href="../htmlpages/gallery.html">Images</a>
+      <a href="../htmlpages/Shopping.html">Shop</a>
+      <a href="../htmlpages/presentation.html">Home</a>
+        <div>
+        <a class="logo" href="../htmlpages/contactUS.html" ><img src="../webPictures/PICTURES/DILSHANPICTURES/logo.PNG" alt="Logo"></a>
+        </div>
+    </nav>
+    <!--added a slider--> 
+    <section id="fontfamily">
+    <div id="slider">
+        <figure>
+            <img src="../webPictures/Images/WELOVEMUSIC_WelcomeBanner.png" alt="welcome">
+            <img src="../webPictures/Images/rsz_welovemusic_webbanners_po.png" alt="slider image 1">
+            <img src="../webPictures/Images/banner.png" alt="slider image 2">
+            <img src="../webPictures/Images/music.png" alt="slider image 3">
+            <img src="../webPictures/Images/WELOVEMUSIC_WelcomeBanner.png" alt="welcome">
+        </figure>
+    </div>
+    <!--This container contains a welcome message, a description and next to that 4 images with text--> 
+    <div class="container">
+    <div class="rowTop">
+        <div class="col">
+            <h1>Welcome to our shop!</h1>
+            <p>Welcome to our online musical equipment store! We offer a wide variety of instruments, equipment, and accessories for musicians of all skill levels.Our website is designed to make it easy for you to find what you're looking for, whether you're a beginner or a professional musician. We have categories for guitars, basses, drums, keyboards, DJ equipment, and more.Thank you for choosing our musical equipment store for all of your music gear needs!</p>
+            <button type="button" class="Explore" onclick="location.href='#product1'"><b>Explore!</b></button>
+        </div>
+        <div class="col">
+            <div class="card card1">
+                <h5>Piano</h5>
+                <p>Piano comes from the original Italian name for the instrument: piano e forte, "soft and loud." Piano is also the musical notation that tells the player that something should be played quietly.</p>
+            </div>
+            <div class="card card2">
+                <h5>Electric guitars</h5>
+                <p>An electric guitar is a guitar that produces sound by vibrating strings over a pickup that converts the vibrations into electrical signals. Those signals are fed into an amplifier which increases the volume.</p>
+            </div>
+            <div class="card card3">
+                <h5>Guitars</h5>
+                <p>guitar, Plucked stringed instrument. It normally has six strings, a fretted fingerboard, and a soundbox with a pronounced waist. It probably originated in Spain.</p>
+            </div>
+            <div class="card card4">
+                <h5>Drums</h5>
+                <p>The Drumset is a set of drums, tom-toms, snare, bass drum, and a series of cymbals, that is commonly found in popular music dating back to the 1920s. It is most commonly played with a pair of drumsticks.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--thsi section contains the products--> 
+<section id="product1" class="sectionp1">
+    <h2>Our Products.</h2><br>
+    <p>A warm welocme to musical lovers and enthusiasts. As a well knowned musical university we have opened our muscial store specially for our studnts to buy their musical equipments for an affordable price. We have collection of branded and high quality equipments. Mastering the art of using a musical instrument to bring a beautiful sound to life is rewarding in so many ways. Music can instill discipline, improve executive brain functions and strengthen coordination in kids and adults. It can also help express creativity and emotions and devise healthy measures for coping with stress. We have all kinds of pianos, guitars, drums, keyboards, flutes, trumpets, violins, recorders, saxophones and many more.For those who remain committed and hone your skills, you can build a successful musical career. But knowing where to start is often a challenge for many people who want to try their hand at this charming art. With tons of different musical instruments, finding one that is newbie-friendly can be difficult. For those we can guide them to chose the perfect instrument. In addition to selling instruments, we also offer repair and maintenance services, rentals. Further we offer free island wide delivery.</p>
+    <div class="pro-container">
+        <div class="pro">
+            <img src="../webPictures/Images/SNY_SRS-XP700-01.jpg" alt="sony speaker">
+            <div class="des">
+                <span id="product1_name"><b>Sony Portable Wireless Speaker</b></span><hr>
+                <h5>mnidirectional Party Sound with integrated rear tweeter.
+                    Up to 25 hours of battery life with quick charging.
+                    X-Balanced Speaker for powerful bass.
+                    IPX4 Splash-resistant design.
+                    New concept LED indirect illumination lighting.</h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement1()">-</button>
+                    <input type="text" class="cart-input1" value="1">
+                    <button class="cart-btn" onclick="increment1()">+</button>
+                  </div>
+                <h4 id="price_product1">Rs.52800</h4>
+            </div>
+            <button type="button" class="Add_to_cart1" id="Add_to_cart1" onclick="Adding_to_cart1()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="../webPictures/Images/CAS_CASIO-CTK7200-03_zoom.jpg" alt="casio keyboard">
+            <div class="des">
+                <span id="product2_name"><b>Casio High Grade Keyboard</b></span><hr>
+                <h5>High graded keyboard having 61 keys with touch response. This have 820 Tones and 260 Rhythms. Further has a SD card slot and weighs 6.7Kg. The AHL sound source delivers a lineup of 820 different built-in tones. You also can store up to 100 of tones.</h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement2()">-</button>
+                    <input type="text" class="cart-input2" value="1">
+                    <button class="cart-btn" onclick="increment2()">+</button>
+                  </div>
+                <h4 id="price_product2">Rs.114850</h4>
+            </div>
+            <button type="button" class="Add_to_cart1" id="Add_to_cart2" onclick="Adding_to_cart2()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="../webPictures/Images/YAM_Y-F310-01_zoom.jpg" alt="Yamaha Guitar">
+            <div class="des">
+                <span id="product3_name"><b>Yamaha Guitar F310</b></span><hr>
+                <h5>Traditional Western Body
+                    Back/Side/Neck Material:Locally Sourced Tonewood. It is precision manufactured and hand-finished to exacting ISO standards and offers the same focus on quality, design and sound as all Yamaha acoustics</h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement3()">-</button>
+                    <input type="text" class="cart-input3" value="1">
+                    <button class="cart-btn" onclick="increment3()">+</button>
+                  </div>
+                <h4 id="price_product3">Rs.8500</h4>
+            </div>
+            <button type="button" class="Add_to_cart1" id="Add_to_cart3" onclick="Adding_to_cart3()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="../webPictures/Images/YAM_Y-PSR-E463-01_zoom.jpg" alt="Yamaha keyboard">
+            <div class="des">
+                <span id="product4_name"><b>Yamaha Portable Keyboard</b></span><hr>
+                <h5>PSR-E463 is the best entry keyboard for performing various styles of music, from the latest to vinyl favorites. It has a 61-key touch response keyboard with powerful on-board speakers and easy-to-use professional features like assignable Live Control knobs.</h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement4()">-</button>
+                    <input type="text" class="cart-input4" value="1">
+                    <button class="cart-btn" onclick="increment4()">+</button>
+                  </div>
+                <h4 id="price_product4">Rs.88000</h4>
+            </div>
+            <button type="button" class="Add_to_cart1" id="Add_to_cart4" onclick="Adding_to_cart4()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="../webPictures/Images/Drumkit.png" alt="Drumkit">
+            <div class="des">
+                <span id="product5_name"><b>Yamaha DTX452K Electric Drumkit</b></span><hr>
+                <h5>The sounds combine years of experience creating authentic, top-quality drum sounds with 10 built-in drum kits.
+                    10 built-in training functions and improve your groove and expression as a drummer.
+                    Combining 3-zone snare pad and real bass drum pedal action.</h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement5()">-</button>
+                    <input type="text" class="cart-input5" value="1">
+                    <button class="cart-btn" onclick="increment5()">+</button>
+                  </div>
+                <h4 id="price_product5">Rs.122000</h4>
+            </div>
+            <button type="button" class="Add_to_cart" id="Add_to_cart5" onclick="Adding_to_cart5()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="../webPictures/Images/RH5MA-320x320.png" alt="headphones">
+            <div class="des">
+                <span id="product6_name"><b>Yamaha RH5MA Headphones</b></span><hr>
+                <h5>The RH5MAs are the undisputed headphone choice for professionals. The ultimate in comfort with urethane leather earpads, these headphones are the semi-open dynamic stereo-type with a standard 8 ft. oxygen free copper cord. Compatible with all audio devices</h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement6()">-</button>
+                    <input type="text" class="cart-input6" value="1">
+                    <button class="cart-btn" onclick="increment6()">+</button>
+                  </div>
+                <h4 id="price_product6">Rs.16600</h4>
+            </div>
+            <button type="button" class="Add_to_cart" id="Add_to_cart6" onclick="Adding_to_cart6()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="../webPictures/Images/NTX700N-1000x1000.png" alt="Electric guitarr">
+            <div class="des">
+                <span id="product7_name"><b>Yamaha Electric Acoustc Guitar</b></span><hr>
+                <h5>Like the NTX1200 and NTX900, Yamaha's NTX700 Acoustic-Electric Classical Guitar easily accommodates a wide range of musical and playing styles and offers the perfect place to start exploring your music and nylon string sound. This has a very well balanced tone. </h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement7()">-</button>
+                    <input type="text" class="cart-input7" value="1">
+                    <button class="cart-btn" onclick="increment7()">+</button>
+                  </div>
+                  
+                <h4 id="price_product7">Rs. 65000</h4>
+            </div>
+            <button type="button" class="Add_to_cart" id="Add_to_cart7" onclick="Adding_to_cart7()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="../webPictures/Images/YSP2700BL-1000x1000.png" alt="soundbar">
+            <div class="des">
+                <span id="product8_name"><b>Yamaha SoundBar</b></span><hr>
+                <h5>Alexa built-in for control of your sound bar, setting timers, controlling lights, thermostats and more without an extra device!
+                    With Alexa, playing music is as simple as asking for a song, artist, or genre from Amazon music and more.
+                    Easy setup with HDMI or Optical cable</h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement8()">-</button>
+                    <input type="text" class="cart-input8" value="1">
+                    <button class="cart-btn" onclick="increment8()">+</button>
+                  </div>
+                <h4 id="price_product8">Rs.62000</h4>
+            </div>
+            <button type="button" class="Add_to_cart" id="Add_to_cart8" onclick="Adding_to_cart8()"><b>Buy Now!</b></button>
+        </div>
+    </div>
+</section>
+
+<!--checkout form--> 
+<div class="container_form" id="form">
+    <form onsubmit="return validate_the_form()">
+        <div class="row_form">
+            <div class="col_form">
+                <h3 class="title">Billing address</h3>
+                <div class="inputBox">
+                    <span>Full Name :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter your name" id="fullname" required>
+                </div>
+                <div class="inputBox">
+                    <span>Email :<label style="color: red;">*</label></span>
+                    <input type="email" placeholder="Enter your email" id="email" required>
+                    <button type="button" class="edit" onclick="Edit_Email()"><b>Edit!</b></button>
+                </div>
+                <div class="inputBox">
+                    <span>Address :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter your address" id="address" required>
+                    <button type="button" class="edit" onclick="Edit_Address()"><b>Edit!</b></button>
+                </div>
+                <div class="inputBox">
+                    <span>Country :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter your country" id="country" required>
+                </div>
+                <div class="flex">
+                <div class="inputBox">
+                    <span>City :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="City" id="city" required>
+                </div>
+                <div class="inputBox">
+                    <span>Province :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Province" id="province" required> 
+                </div>
+                <div class="inputBox">
+                    <span >Zip code :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Zip code" id="zip" required>
+                </div>
+                </div>
+            </div>
+
+            <div class="col_form">
+                <h3 class="title">Payment Gateway</h3>
+                <div class="inputBox">
+                    <span>We Accept :</span>
+                    <img src="../webPictures/Images/payments.png" alt="Cards Accepted">
+                </div>
+                <div class="inputBox">
+                    <span>Name on Card:<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter your name on card" id="name_on_card" required>
+                </div>
+                <div class="inputBox">
+                    <span>Credit card number :<label style="color: red;">*</label></span>
+                    <input type="password" placeholder="0000-0000-0000-0000" id="card_number" required>
+                </div>
+                <div class="inputBox">
+                    <span>Expiry month :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter month 01-12" id="month" required>
+                </div>
+                <div class="flex">
+                <div class="inputBox">
+                    <span>Expiry year :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="2023" id="year" required>
+                </div>
+                <div class="inputBox">
+                    <span>CVV :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter CVV" id="cvv" required>
+                </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" value="checkout" class="submit-btn" id="submit"><b>Checkout</b></button>
+    </form>
+</div>
+<br>
+
+<!--cart--> 
+<div class="checkout_details" id="checkout_details">
+    <div class="col-25">
+        <div class="container2">
+            <h3>Checkout Details.</h3>
+          <h4 id="Name_of_buyer"></h4><br>
+
+          <table>
+            <tr>
+              <td>
+                <p><span id="item_1" style="color: black;"></span></p>
+              </td>
+              <td>
+                <p><span class="price" id="price_1"></span></p>
+              </td>
+              <td>
+                <button class="Clear_all" id="clear_products1" onclick="ClearAll_1()" style="display: none;">Clear product!</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><span id="item_2" style="color: black;"></span></p>
+              </td>
+              <td>
+                <p><span class="price" id="price_2"></span></p>
+              </td>
+              <td>
+                <button class="Clear_all" id="clear_products2" onclick="ClearAll_2()" style="display: none;">Clear product!</button>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <p><span id="item_3" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_3"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products3" onclick="ClearAll_3()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span id="item_4" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_4"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products4" onclick="ClearAll_4()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span id="item_5" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_5"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products5" onclick="ClearAll_5()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span id="item_6" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_6"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products6" onclick="ClearAll_6()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span id="item_7" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_7"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products7" onclick="ClearAll_7()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span id="item_8" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_8"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products8" onclick="ClearAll_8()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+          </table>
+          <hr><br>
+          <p style="color: black;">Total Price<span class="total_price" style="color:black" id="Total_price"><b></b></span></p>
+          <button class="confirm" id="Confirm_purchase" type="button" onclick="Confirm_Purchase()">Confirm Purchase!</button>
+          <div class="time_date">
+            <br>
+            <span class="text-right" id="time"></span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="editor">
+        <button type="button" class="editors_page" onclick="location.href='../htmlpages/student1.html'">Editor's Page</button>
+    </div>
+
+<div class="toptobottom">
+    <button type="button" class="go_to_top" onclick="location.href='#nav'"><b>Go To Top</b></button>
+</div>
+</section>
+
+
+<script>
+    document.getElementById('time').innerHTML =Date();
+</script>
+
+<footer>
+  <!--footer of the page--> 
+    <div class="footer">
+    <div class="row">
+      <a id="facebook" href="https://www.facebook.com/irudaka.ivantha?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+      <a id="insta" href="https://instagram.com/irudaka_ivantha?igshid=ZDdkNTZiNTM="><i class="fa fa-instagram"></i></a>
+      <a id="youtube" href="https://wa.me/741298656"><i class="fa fa-whatsapp"></i></a>
+      <a id="twitter" href="https://www.linkedin.com/in/irudaka-ivantha-8098ba230"><i class="fa fa-linkedin"></i></a>
+    </div>
+  
+    <div class="row">
+      <ul>
+      <li><a href="#">Back to TOP</a></li>
+      <li><a href="../htmlpages/contactUS.html">Contact us </a></li>
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#terms">Terms & Conditions</a></li>
+      <li><a href="../htmlpages/student1.html">Editors page</a></li>
+      </ul>
+    </div>
+  
+    <div class="row">
+    Tune-Master Copyright © 2023 TuneMaster - All rights reserved || Designed By: MUSIC SCHOOL OF TUNE MASTER. 
+    </div>
+    </div>
+  </footer>
+</body>
+</html>
