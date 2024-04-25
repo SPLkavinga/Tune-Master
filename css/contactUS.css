@@ -1,0 +1,37 @@
+body{
+  background-color: rgb(0, 0, 0);
+}
+
+.card {
+  box-shadow    : 0 4px 80px 0 rgba(0, 0, 0, 0.2);
+  max-width     : 3000px;
+  margin-top    : 120px;
+  margin-bottom : 120px;
+  text-align    : center;
+  margin-left   : auto;
+  margin-right  : auto;
+  color         : rgb(255, 255, 255);
+}
+
+
+  
+#contactUSbutton {
+  border           : none;
+  outline          : 0;
+  display          : inline-block;
+  padding          : 8px;
+  color            : white;
+  background-color : #333;
+  text-align       : center;
+  cursor           : pointer;
+  font-size        : 80px;
+  border-color     : #BCFD4C;
+  }
+  
+#contactUSbutton:hover, #contactUSbutton a:hover {
+  background-color  : #7aa929;
+  transition        : all 0.4s ease 0s;
+  box-shadow        : 0 1px 10px 0 #BCFD4C inset, 0 1px 10px 0 #BCFD4C,
+                      0 1px 10px 0 #BCFD4C inset, 0 1px 10px 0 #BCFD4C;
+  text-shadow       : 0 0 3px #ffffff, 0 0 2px #ffffff;
+  }

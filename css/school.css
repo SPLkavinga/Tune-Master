@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0; 
+    background-image: url(../extrapage/student2pictures/img9.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.content{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+ 
+}
+h1 {
+    animation: type 4s steps(27);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid white;
+    width: 27ch;
+    margin-top: 8%;
+    font-size: 100px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+
+}
+.content p {
+    width: 55%;
+    line-height: 2;
+}
+.extracontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30%;
+
+} 
+.card p {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20%;   
+}
+
+.card {
+    width: 50%;
+    height: 40%;
+    padding-bottom: 5%;
+    float: left;
+    margin: 0 10px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.147);
+    text-align: center;
+    border-radius: 10px;
+
+}
+.card:hover{
+    transform: translateY(-10px); 
+}
+
+.card img {
+    width: 100%;
+
+    height: 90%;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-weight: 600;
+    /* font-family: avenir; */
+}
+
+
+
+
+
+.img-box{ 
+    width: 300px;
+    height: 400px;
+    padding:auto;
+}
+
+
+@keyframes type   
+{ 
+    0%
+    {
+        width: 0ch;
+    }
+    100%
+    {
+        width: 27ch;
+    }
+
+}
+  
+        
+
+
+
+
+
